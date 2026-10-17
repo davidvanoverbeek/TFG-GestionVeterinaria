@@ -1,0 +1,23 @@
+{
+  "name": "gestion-mascotas",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "David Antonio van Overbeek Crusells (https://davidvanoverbeek.netlify.app/)",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.0",
+    "nodemon": "^1.19.4"
+  }
+}
