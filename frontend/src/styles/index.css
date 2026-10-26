@@ -1,0 +1,197 @@
+:root {
+  --verde: #1e8449;
+  --verde-oscuro: #14663a;
+  --fondo: #f4f6f6;
+  --borde: #8a9199;
+  --borde-suave: #cfd4d9;
+  --texto: #222222;
+  --texto-suave: #6b7280;
+  --peligro: #b03a2e;
+  --foco: #0b5fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background: var(--fondo);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--verde);
+  font-weight: bold;
+}
+
+:focus-visible {
+  outline: 3px solid var(--foco);
+  outline-offset: 2px;
+}
+
+/* ---------- Cabecera ---------- */
+.navbar {
+  background: var(--verde);
+  color: #ffffff;
+}
+
+.navbar__contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.navbar__logo {
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.navbar__nav {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar__enlace {
+  color: #ffffff;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 8px 0;
+  font: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar__enlace.active {
+  font-weight: bold;
+  border-bottom-color: #ffffff;
+}
+
+/* ---------- Contenido ---------- */
+.contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.pagina__titulo {
+  margin-top: 0;
+}
+
+/* ---------- Formularios de acceso ---------- */
+.auth {
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 32px 30px;
+  background: #ffffff;
+  border: 1.5px solid var(--borde-suave);
+  border-radius: 10px;
+}
+
+.auth__titulo {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth__pie {
+  margin: 24px 0 0;
+  text-align: center;
+  color: var(--texto-suave);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo__etiqueta {
+  font-weight: bold;
+}
+
+.campo__input {
+  min-height: 44px;
+  padding: 8px 12px;
+  font: inherit;
+  border: 1.5px solid var(--borde);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.campo__ayuda {
+  color: var(--texto-suave);
+}
+
+/* ---------- Botones y mensajes ---------- */
+.btn {
+  min-height: 44px;
+  padding: 8px 18px;
+  font: inherit;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+}
+
+.btn--primario {
+  background: var(--verde);
+  border-color: var(--verde);
+  color: #ffffff;
+}
+
+.btn--primario:hover:not(:disabled) {
+  background: var(--verde-oscuro);
+}
+
+.btn--bloque {
+  width: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.mensaje {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+
+.mensaje--error {
+  color: var(--peligro);
+  background: #fdedec;
+  border: 1px solid var(--peligro);
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 480px) {
+  .contenido {
+    padding: 20px 14px;
+  }
+
+  .auth {
+    margin: 0 auto;
+    padding: 24px 18px;
+  }
+}
