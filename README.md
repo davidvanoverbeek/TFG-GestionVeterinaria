@@ -25,7 +25,7 @@ npm run dev
 
 | Variable | Descripción |
 |---|---|
-| `PORT` | Puerto del servidor (por defecto 3000) |
+| `PORT` | Puerto del servidor (por defecto 8080) |
 | `MONGODB_URI` | Cadena de conexión a MongoDB Atlas |
 | `JWT_SECRET` | Secreto para firmar los tokens |
 
