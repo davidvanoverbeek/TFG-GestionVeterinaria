@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node server.js",
-    "dev": "node --watch server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "David Antonio van Overbeek Crusells (https://davidvanoverbeek.netlify.app/)",

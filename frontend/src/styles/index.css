@@ -184,6 +184,32 @@ a {
   border: 1px solid var(--peligro);
 }
 
+.mascotas__lista {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.tarjeta {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.tarjeta__titulo {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tarjeta__dato {
+  margin: 0.15rem 0;
+  color: #444;
+}
+
 /* ---------- Móvil ---------- */
 @media (max-width: 480px) {
   .contenido {
